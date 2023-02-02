@@ -7,7 +7,7 @@
     <a href="https://github.com/tensorspeech/TensorFlowTTS/blob/master/LICENSE">
         <img alt="GitHub" src="https://img.shields.io/github/license/tensorspeech/TensorflowTTS?color=red">
     </a>
-    <a href="https://colab.research.google.com/drive/1akxtrLZHKuMiQup00tzO2olCaN-y3KiD?usp=sharing">
+n    <a href="https://colab.research.google.com/drive/1akxtrLZHKuMiQup00tzO2olCaN-y3KiD?usp=sharing">
         <img alt="Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
     </a>
 </p>
@@ -15,6 +15,12 @@
 <h2 align="center">
 <p>Real-Time State-of-the-art Speech Synthesis for Tensorflow 2
 </h2>
+
+## Tor's notes
+
+- `server.py` is the main part, which runs a Gradio web-server where text can be submitted and then turned into speech, with the resulting audio files stored in my Dropbox. NOTE: this is super-hacky but it works as a proof-of-concept.
+
+## Original stuff
 
 :zany_face: TensorFlowTTS provides real-time state-of-the-art speech synthesis architectures such as Tacotron-2, Melgan, Multiband-Melgan, FastSpeech, FastSpeech2 based-on TensorFlow 2. With Tensorflow 2, we can speed-up training/inference progress, optimizer further by using [fake-quantize aware](https://www.tensorflow.org/model_optimization/guide/quantization/training_comprehensive_guide) and [pruning](https://www.tensorflow.org/model_optimization/guide/pruning/pruning_with_keras), make TTS models can be run faster than real-time and be able to deploy on mobile devices or embedded systems.
 
